@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+@import url("./theme.css");
+
+html
+
+*::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	white-space: nowrap;
+}
+
+header {
+	background-color: rgba(0,0,0,0.9);
+}
+
+.carousel-container {
+  display: block;
+  overflow: hidden;
+}
+
+.carousel-container .carousel-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-slide:before {
+  content: '';
+  position: absolute;
+  top: 0; left:0; right:0; bottom:0;
+  background: inherit;
+}
+
+
+
+.main-content {
+	transition: 0.8s;
+	background-color: var(--usually-used-red);
+}
+
+.header-wrapper a, .main-content > h2, .main-content > p {
+	text-shadow: 1px 0 #000;
+}
+
+.slide-image-0 {
+	background: no-repeat center url('../assets/images/slide-image-0.png');
+	background-size: cover;
+}
+
+.slide-image-1 {
+	background: no-repeat center url('../assets/images/slide-image-1.png');
+	background-size: cover;
+}
+
+.slide-image-2 {
+	background: no-repeat center url('../assets/images/slide-image-2.png');
+	background-size: cover;
+}
+
+.slide-image-3 {
+	background: no-repeat center url('../assets/images/slide-image-3.png');
+	background-size: cover;
+}
+
+.nav-button.hover {
+  color: var(--usually-used-red);
+	border-radius: 0;
+	background-color: transparent;
+	border-bottom: 2px solid var(--usually-used-red);
+	transition: 200ms;
+}
+
+.nav-button.active {
+	color: var(--usually-used-red);
+	border-radius: 0;
+	border-bottom: 2px solid var(--usually-used-red);
+}
+
+.swiper {
+	width: 100%;
+	height: 100vh;
+}
+
+.title-area-wrapper {
+	background-color: var(--usually-used-green);
+}
+
+.title-area {
+	max-width: 1440px;
+}
+
+.alert-image {
+	width: 450px;
+	height: 200px;
+	margin-right: 300px;
+}
+
+.description-area {
+	max-width: 1280px;
+}
+
+.desc-title::before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	display: block;
+	background-color: var(--usually-used-red);
+	width: 20px;
+	height: 35px;
+}
+
+.content {
+	padding-top: 8rem;
+	width: 1280px;
+	margin: 0 auto;
+}
+
+.title::before {
+	content: '';
+	position: absolute;
+	margin-left: -25px;
+	display: block;
+	background-color: var(--usually-used-red);
+	width: 20px;
+	height: 45px;
+}
